@@ -1,0 +1,258 @@
+:root {
+  --sage: #D1E4C5;
+  --slate: #425D52;
+  --yellow: #FED11F;
+  --rust: #A7503B;
+  --black: #030404;
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: "fonde";
+  
+  src: local("fonde"),
+  url('./font/fonde.ttf') format("truetype");
+}
+
+.App .slate-text {
+  color: var(--slate) !important;
+}
+
+.App .major-container {
+
+  width: 100vw;
+  height: 100vh;
+  word-wrap:  normal;
+  overflow: auto;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.remove-margin {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.App .main-logo {
+  width: 100vh;
+  height: 100vh;
+}
+
+.App .main-div {
+  padding-top: 225px;
+  padding-bottom: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  min-height: 100%;
+ 
+}
+
+
+.App .main-div-smaller {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  min-height: 100%;
+ 
+}
+
+.App .center-text {
+  text-align: center;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.bg-yellow {
+  background-color: var(--yellow)
+}
+
+.bg-white {
+  background-color: var(--white)
+}
+
+.bg-sage {
+  background-color: var(--sage)
+}
+
+.bg-rust {
+  background-color: var(--rust)
+}
+
+
+.App .tab1 {
+  padding-left: 20px;
+}
+.App .tab2 {
+  padding-left: 40px;
+}
+.App .tab3 {
+  padding-left: 60px;
+}
+.App .tab4 {
+  padding-left: 80px;
+}
+.App .tab5 {
+  padding-left: 100px;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.h1 {
+  letter-spacing: 0px;
+  font-size: 50px;
+  font-family: 'fonde';
+  color: var(--black);
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+  white-space: nowrap;
+}
+.h1-alt {
+  letter-spacing: 0px;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: var(--black);
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+}
+.h2-alt {
+  letter-spacing: 0px;
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: var(--black);
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+}
+
+.h2 {
+  letter-spacing: 0px;
+  font-size: 40px;
+  font-family: 'fonde';
+  color: var(--black);
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+}
+.p {
+  letter-spacing: 0px;
+  font-size: 28px;
+  font-family: 'fonde';
+  color: var(--black);
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+}
+
+.p-alt {
+  letter-spacing: 0px;
+  font-size: 26px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: var(--black);
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+}
+
+.p2-alt {
+  letter-spacing: 0px;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  color: var(--black);
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+}
+
+.App .link {
+  line-height: 18px;
+  letter-spacing: 0px;
+  font-size: 28px;
+  font-family: 'fonde';
+  font-style: italic;
+  color: var(--rust);
+  text-decoration: none;
+  white-space: nowrap
+}
+
+
+.App .form-control {
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  color: var(--slate);
+  background-color: var(--white);
+  width: 33%;
+  min-width: 300px;
+  border:  2px solid var(--sage);
+  outline:  none !important;
+}
+.App .form-control:focus {
+  border:  2px solid var(--slate);
+  outline:  none !important;
+}
+
+.App .button-active {
+  letter-spacing: 0px;
+  transition-duration: .15s;
+  font-size: 30px;
+  font-family: 'fonde';
+  font-weight: 400;
+  vertical-align: middle;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+  color:  var(--white);
+  background-color: var(--slate);
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  text-align: center;
+  border-width: 0px;
+  height: 55px;
+  cursor: pointer;
+  display: inline-block;
+
+}
+
+.App .button-off {
+  letter-spacing: 0px;
+  transition-duration: .15s;
+  font-size: 30px;
+  font-family: 'fonde';
+  font-weight: 400;
+  vertical-align: middle;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+  color:  var(--white);
+  background-color: var(--sage);
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  text-align: center;
+  border-width: 0px;
+  height: 55px;
+  cursor: not-allowed;
+  display: inline-block;
+}
