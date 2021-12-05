@@ -21,6 +21,8 @@ app.use(cors())
 app.use(bodyParser.json());
 
 console.log(gm)
+console.log(gm["usr"])
+console.log(gm["pwd"])
 
 // create reusable transporter object using the default SMTP transport
 const transporter = nodemailer.createTransport({
