@@ -102,8 +102,8 @@ app.get('/version',function(req, res) {
 
 
 const httpsServer = https.createServer({
-  key: fs.readFileSync('/etc/letsencrypt/archive/dylanandemily2022.com-0001/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/archive/dylanandemily2022.com-0001/fullchain.pem'),
+  key: fs.readFileSync('privkey.pem'),
+  cert: fs.readFileSync('fullchain.pem'),
   dhparam: fs.readFileSync("/var/www/host/dh-strong.pem")
 }, app);
 
