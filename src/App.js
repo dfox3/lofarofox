@@ -136,11 +136,8 @@ class App extends Component {
             </Fade>
           </div>
         </div>
-        <div className="App bg-rust">
-          <div className="main-logo center bg-rust" style={{"width":"250px", "height":"250px"}} >
-
-          </div>
-        </div>
+        <div className="App bg-rust"style={{"width":"100%", "height":"25px", "margin-bottom":"100px"}} >
+        </div>    
         <div className="main-div-smaller" >
           <div className="center-text">
             <div className="container mrgnbtm">
