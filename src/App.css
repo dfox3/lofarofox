@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "fonde";
-  
+
   src: local("fonde"),
   url('./font/fonde.ttf') format("truetype");
 }
@@ -63,7 +63,7 @@
  
 }
 
-.App .center-text {
+.center-text {
   text-align: center;
 }
 

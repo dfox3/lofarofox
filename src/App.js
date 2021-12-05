@@ -10,7 +10,7 @@ import axios from 'axios';
 import GoogleMap from './components/Map2' // import the map here
 import Fade from 'react-reveal/Fade';
 
-import dummy from './assets/dummy.jpeg'
+import dummy from './assets/dummy.png'
 
 import john from './assets/john.png'
 import patrick from './assets/patrick.png'
@@ -20,8 +20,8 @@ import oliver from './assets/oliver.png'
 import aiden from './assets/aiden.png'
 import rory from './assets/rory.png'
 import tintype from './assets/tintype.png'
-import hyatt from './assets/hyatt.jpeg'
-import doubletree from './assets/doubletree.jpeg'
+import hyatt from './assets/hyatt1.png'
+import doubletree from './assets/doubletree1.png'
 import logo from './assets/DE_StampHead.svg'
 import logo_sage from './assets/DE_StampHead-sage.svg'
 import logo_slate from './assets/DE_StampHead-slate.svg'
@@ -188,7 +188,7 @@ class App extends Component {
                             <input type="email" id="email" className="form-control center-text" aria-describedby="emailHelp" value={this.state.email} onChange={evt => this.onEmailChange(evt)}/>
                         </p>
                         <p className="App p">
-                            <label htmlFor="message">Specify below guests' dinner preferences<br/>Chicken or Vegetarian?</label>
+                            <label htmlFor="message">Specify guests' dinner preferences below.<br/>Chicken or Vegetarian?</label>
                             <div className="App short-spacer" />
                             <textarea className="form-control" id="message" rows="15" value={this.state.message} style={{"width":"60%", "height":"250px"}} onChange={evt => this.onMessageChange(evt)}></textarea>
                         </p>
@@ -388,9 +388,9 @@ class App extends Component {
                 <br/>
               </div>
               <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={aiden} style={{"width":"40vh", "min-width":"30vh"}} alt="Aiden Fox - Honorary Groomsman" />
+                <img src={aiden} style={{"width":"40vh", "min-width":"30vh"}} alt="Aiden Fox - Groomsman" />
                 <h2 className="h2 center-text remove-margin">Aiden Fox</h2>
-                <p className="p center-text remove-margin">Honorary Groomsman</p>
+                <p className="p center-text remove-margin">Groomsman</p>
                 <p className="p2-alt center-text remove-margin">
                   Nephew and former housemate to the Bride and Groom.
                 </p>
@@ -398,9 +398,9 @@ class App extends Component {
                 <br/>
               </div>
               <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={rory} style={{"width":"40vh", "min-width":"30vh"}} alt="Aurora Fox - Honorary Bridesmaid" />
+                <img src={rory} style={{"width":"40vh", "min-width":"30vh"}} alt="Aurora Fox - Junior Bridesmaid" />
                 <h2 className="h2 center-text remove-margin">Aurora Fox</h2>
-                <p className="p center-text remove-margin">Honorary Bridesmaid</p>
+                <p className="p center-text remove-margin">Junior Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
                   Niece and former playmate to the Bride and Groom. 
                 </p>
