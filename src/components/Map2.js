@@ -16,7 +16,7 @@ const center = { // CN Tower Landmark
 // styles
 const mapStyles = {
     width: '100%',
-    height: '800px',
+    height: '60vw',
 };
 
 function GoogleMaps(props) {

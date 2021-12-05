@@ -31,23 +31,6 @@ import logo_white from './assets/DE_StampHead-white.svg'
 
 
 
-const location2 = {
-  address: 'VUKA at Bouldin Creek - 411 W Monroe St',
-  lat: 30.248721,
-  lng: -97.754445,
-} 
-const location = {
-  address: 'Hyatt Regency - 208 Barton Springs Rd',
-  lat: 30.2607354,
-  lng: -97.7493519,
-} 
-const location3 = {
-  address: 'Doubletree Suites by Hilton Hotel Austin - 303 W 15th St',
-  lat: 30.2771334,
-  lng: -97.7432188
-} 
-
-
 class App extends Component {
   
   constructor(props) {
@@ -106,20 +89,17 @@ class App extends Component {
     return (
       <div className="major-container bg-white">
         <ToastContainer /> 
-        <div className="App bg-sage" style={{"padding-bottom": "0px"}}>
-          <div className="main-div" ><div style={{"display": "flex"}}>
-              
-              <div style={{"padding":"15px", "width":"50%"}}>
+        <div className="App bg-sage">
+          <div className="main-div-smaller" >
+            <h1 className="h1">Emily Lofaro & Dylan Fox</h1>
+            <div className="flex-wrap" >
+              <div style={{"width":"50vh", "min-width":"30vh"}} >
 
                 <Fade bottom cascade>
-                <h1 className="h1">Emily Lofaro & Dylan Fox</h1>
                 
                 <br/>
                 <br/>
-                </Fade>
-
-                <Fade bottom cascade>
-              <p className="p">
+                <p className="p">
 
                 
                 Together with their families, Dylan and Emily joyfully invite you to their wedding.
@@ -131,18 +111,19 @@ class App extends Component {
                 
                 <br/>
                 <br/>
-              </p>
+                </p>
                 </Fade>
               </div>
-
-              <div style={{"width":"50%"}}>
+              <div>
                 <img src={tintype} style={{"width":"100%"}} alt="Image of the downtown Austin Doubletree" />
               </div>
+
+             
             </div>
           </div>
         </div>
         <div className="App bg-white">
-          <div className="main-div-smaller">
+          <div className="main-div-smallest" >
             <Fade bottom cascade>
               <p className="p center-text">
                 The event is held at VUKA at Bouldin Creek in Austin, TX.
@@ -170,7 +151,7 @@ class App extends Component {
                   </Fade>
                   <Fade bottom cascade>
 
-                    <form id="contact-form" onSubmit={() => this.handleSubmit()} className="App black-box greyshadow-bottom center">
+                    <form id="contact-form" onSubmit={() => this.handleSubmit()} className="App black-box greyshadow-bottom pseudo-center" >
                       
                         <p className="p">
                             <label htmlFor="name">Name</label>
@@ -182,15 +163,15 @@ class App extends Component {
                             <div className="App short-spacer" />
                             <input type="number" id="organization" placeholder="2" className="form-control center-text" value={this.state.organization} onChange={evt => this.onOrganizationChange(evt)}/>
                         </p>
-                        <p className="App p">
+                        <p className="p">
                             <label htmlFor="email">Email address</label>
                             <div className="App short-spacer" />
                             <input type="email" id="email" className="form-control center-text" aria-describedby="emailHelp" value={this.state.email} onChange={evt => this.onEmailChange(evt)}/>
                         </p>
-                        <p className="App p">
+                        <p className="p">
                             <label htmlFor="message">Specify guests' dinner preferences below.<br/>Chicken or Vegetarian?</label>
                             <div className="App short-spacer" />
-                            <textarea className="form-control" id="message" rows="15" value={this.state.message} style={{"width":"60%", "height":"250px"}} onChange={evt => this.onMessageChange(evt)}></textarea>
+                            <textarea className="form-control" id="message" rows="15" value={this.state.message} style={{"height":"25vh","max-width":"550px", }} onChange={evt => this.onMessageChange(evt)}></textarea>
                         </p>
                         { (this.state.email !== '' && this.state.message !== '') ?
                           (<button type="submit" className="App button-active">Submit</button>) :
@@ -212,8 +193,8 @@ class App extends Component {
             
             <br/>
             <br/>
-            <div style={{"display": "flex"}}>
-              <div style={{"padding":"15px", "width":"50%"}}>
+              <div className="flex-wrap" >
+              <div style={{"max-width":"700px","width":"100%"}} >
                 <h2 className="h2 slate-text">Hyatt Regency</h2>
                 <br/>
                 <p className="p-alt slate-text">
@@ -232,21 +213,22 @@ class App extends Component {
                 <br/>
                 </p>  
               </div>
-
-              <div style={{"padding":"15px", "width":"50%"}}>
-                <img src={hyatt} style={{"width":"100%"}}  alt="Image of the Hyatt Regency overlooking Town Lake" />
-              </div>
+              <div>
+                <img src={hyatt} style={{"max-width":"700px","width":"100%"}}  alt="Image of the Hyatt Regency overlooking Town Lake" />
+                </div>
             </div>
             <br/>
             <br/>
             <br/>
             <br/>
-            <div style={{"display": "flex"}}>
-              
-              <div style={{"padding":"15px", "width":"50%"}}>
-                <img src={doubletree} style={{"width":"100%"}} alt="Image of the downtown Austin Doubletree" />
+
+        <div className="App bg-rust"style={{"width":"100%", "height":"25px", "margin-bottom":"100px"}} >
+        </div>    
+              <div className="flex-wrap" >
+              <div >
+                <img src={doubletree} style={{"max-width":"700px","width":"100%"}} alt="Image of the downtown Austin Doubletree" />
               </div>
-              <div style={{"padding":"15px", "width":"50%"}}>
+              <div style={{"max-width":"700px","width":"100%"}} >
                 <h2 className="h2 slate-text">Doubletree Suites by Hilton Hotel Austin</h2>
                 <br/>
                 <p className="p-alt slate-text">
@@ -277,8 +259,8 @@ class App extends Component {
           <div className="main-div-smaller" >
             <h1 className="h1 center-text">Meet the wedding party!</h1>
             <div className="flex-wrap" >
-              <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={john} style={{"width":"40vh", "min-width":"30vh"}} alt="John Fox - Best Man" />
+              <div style={{"width":"100%", "max-width":"400px"}} >
+                <img src={john} style={{"width":"100%", "max-width":"400px"}} alt="John Fox - Best Man" />
                 <h2 className="h2 center-text remove-margin">John Fox</h2>
                 <p className="p center-text remove-margin">Best Man</p>
                 <p className="p2-alt center-text remove-margin">
@@ -288,8 +270,8 @@ class App extends Component {
                 <br/>
                 <br/>
               </div>
-              <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={dummy} style={{"width":"40vh", "min-width":"30vh"}} alt="John Fox - best man" />
+              <div style={{"width":"100%", "max-width":"400px"}} >
+                <img src={dummy} style={{"width":"100%", "max-width":"400px"}} alt="John Fox - best man" />
                 <h2 className="h2 center-text remove-margin">Melanie Lofaro Osti</h2>
                 <p className="p center-text remove-margin">Maid of Honor</p>
                 <p className="p2-alt center-text remove-margin">
@@ -298,8 +280,8 @@ class App extends Component {
                 <br/>
                 <br/>
               </div>
-              <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={patrick} style={{"width":"40vh", "min-width":"30vh"}} alt="Patrick Fox - Groomsman" />
+              <div style={{"width":"100%", "max-width":"400px"}} >
+                <img src={patrick} style={{"width":"100%", "max-width":"400px"}} alt="Patrick Fox - Groomsman" />
                 <h2 className="h2 center-text remove-margin">Patrick Fox</h2>
                 <p className="p center-text remove-margin">Groomsman</p>
                 <p className="p2-alt center-text remove-margin">
@@ -309,8 +291,8 @@ class App extends Component {
                 <br/>
                 <br/>
               </div>
-              <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={dummy} style={{"width":"40vh", "min-width":"30vh"}} alt="John Fox - best man" />
+              <div style={{"width":"100%", "max-width":"400px"}} >
+                <img src={dummy} style={{"width":"100%", "max-width":"400px"}} alt="John Fox - best man" />
                 <h2 className="h2 center-text remove-margin">Catherine Lofaro Rangel</h2>
                 <p className="p center-text remove-margin">Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
@@ -320,8 +302,8 @@ class App extends Component {
                 <br/>
                 <br/>
               </div>
-              <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={kyle} style={{"width":"40vh", "min-width":"30vh"}} alt="Kyle Siegler - Groomsman" />
+              <div style={{"width":"100%", "max-width":"400px"}} >
+                <img src={kyle} style={{"width":"100%", "max-width":"400px"}} alt="Kyle Siegler - Groomsman" />
                 <h2 className="h2 center-text remove-margin">Kyle Siegler</h2>
                 <p className="p center-text remove-margin">Groomsman</p>
                 <p className="p2-alt center-text remove-margin">
@@ -331,8 +313,8 @@ class App extends Component {
                 <br/>
                 <br/>
               </div>
-              <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={dummy} style={{"width":"40vh", "min-width":"30vh"}} alt="John Fox - best man" />
+              <div style={{"width":"100%", "max-width":"400px"}} >
+                <img src={dummy} style={{"width":"100%", "max-width":"400px"}} alt="John Fox - best man" />
                 <h2 className="h2 center-text remove-margin">Amanda Lofaro</h2>
                 <p className="p center-text remove-margin">Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
@@ -342,8 +324,8 @@ class App extends Component {
                 <br/>
                 <br/>
               </div>
-              <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={kevin} style={{"width":"40vh", "min-width":"30vh"}} alt="Kevin Allen - Groomsman" />
+              <div style={{"width":"100%", "max-width":"400px"}} >
+                <img src={kevin} style={{"width":"100%", "max-width":"400px"}} alt="Kevin Allen - Groomsman" />
                 <h2 className="h2 center-text remove-margin">Kevin Allen</h2>
                 <p className="p center-text remove-margin">Groomsman</p>
                 <p className="p2-alt center-text remove-margin">
@@ -354,8 +336,8 @@ class App extends Component {
                 <br/>
                 <br/>
               </div>
-              <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={dummy} style={{"width":"40vh", "min-width":"30vh"}} alt="John Fox - best man" />
+              <div style={{"width":"100%", "max-width":"400px"}} >
+                <img src={dummy} style={{"width":"100%", "max-width":"400px"}} alt="John Fox - best man" />
                 <h2 className="h2 center-text remove-margin">Kaitlyn Coffey</h2>
                 <p className="p center-text remove-margin">Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
@@ -365,8 +347,8 @@ class App extends Component {
                 <br/>
                 <br/>
               </div>
-              <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={oliver} style={{"width":"40vh", "min-width":"30vh"}} alt="Oliver Nath - Groomsman" />
+              <div style={{"width":"100%", "max-width":"400px"}} >
+                <img src={oliver} style={{"width":"100%", "max-width":"400px"}} alt="Oliver Nath - Groomsman" />
                 <h2 className="h2 center-text remove-margin">Oliver Nath</h2>
                 <p className="p center-text remove-margin">Groomsman</p>
                 <p className="p2-alt center-text remove-margin">
@@ -376,8 +358,8 @@ class App extends Component {
                 <br/>
                 <br/>
               </div>
-              <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={dummy} style={{"width":"40vh", "min-width":"30vh"}} alt="John Fox - best man" />
+              <div style={{"width":"100%", "max-width":"400px"}} >
+                <img src={dummy} style={{"width":"100%", "max-width":"400px"}} alt="John Fox - best man" />
                 <h2 className="h2 center-text remove-margin">Sarah Furman</h2>
                 <p className="p center-text remove-margin">Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
@@ -387,8 +369,8 @@ class App extends Component {
                 <br/>
                 <br/>
               </div>
-              <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={aiden} style={{"width":"40vh", "min-width":"30vh"}} alt="Aiden Fox - Groomsman" />
+              <div style={{"width":"100%", "max-width":"400px"}} >
+                <img src={aiden} style={{"width":"100%", "max-width":"400px"}} alt="Aiden Fox - Groomsman" />
                 <h2 className="h2 center-text remove-margin">Aiden Fox</h2>
                 <p className="p center-text remove-margin">Groomsman</p>
                 <p className="p2-alt center-text remove-margin">
@@ -397,8 +379,8 @@ class App extends Component {
                 <br/>
                 <br/>
               </div>
-              <div style={{"width":"40vh", "min-width":"30vh"}} >
-                <img src={rory} style={{"width":"40vh", "min-width":"30vh"}} alt="Aurora Fox - Junior Bridesmaid" />
+              <div style={{"width":"100%", "max-width":"400px"}} >
+                <img src={rory} style={{"width":"100%", "max-width":"400px"}} alt="Aurora Fox - Junior Bridesmaid" />
                 <h2 className="h2 center-text remove-margin">Aurora Fox</h2>
                 <p className="p center-text remove-margin">Junior Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
