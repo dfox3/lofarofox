@@ -35,7 +35,7 @@ host: "smtp.gmail.com",
 secure: true,
 });
 
-var email = "shirebiollc@gmail.com"
+var email = "lofarofox@gmail.com"
 
 const mailData = {
 from: gm["usr"],  // sender address
@@ -62,8 +62,8 @@ app.post('/mailstaff',(req, res) => {
   //var datetime = "LastSync: " + new newDate.today() + " @ " + new newDate.timeNow();
   const mailData = {
     from: gm["usr"],  // sender address
-    to: ["kevin@shirebio.com"],   // list of receivers
-    bcc: "dylan@shirebio.com",
+    to: ["lofarofox@shirebio.com"],   // list of receivers
+    bcc: ["lofarofox@shirebio.com", req.body.email],
     subject: "REQUEST from " + req.body.name, // + " - " + datetime,
     html: "name:\t" + req.body.name + 
           "<br/><br/>email:\t" + req.body.email +
