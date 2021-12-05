@@ -37,7 +37,7 @@ class App extends Component {
     super(props);
       this.state = {
         name: '',
-        organization: '',
+        guest: "",
         email: '',
         message: ''
       };
@@ -48,8 +48,8 @@ class App extends Component {
     console.log(this.state)
   }
 
-  onOrganizationChange(event) {
-    this.setState({organization: event.target.value})
+  onGuestChange(event) {
+    this.setState({guest: event.target.value})
     console.log(this.state)
   }
 
@@ -67,14 +67,16 @@ class App extends Component {
     console.log(this.state)
     var data = this.state
     console.log(data)
-    axios.post("https://adasfoundation.org:443/mailstaff", data, {})
+    axios.post("https://dylanandemily2022.org:443/mailstaff", data, {})
     .then((response)=>{
       console.log(response.data)
       if (response.data === 'Email sent') {
         alert("Message Sent.");
+        console.log("message sent")
         this.resetForm()
       } else {
         alert("Message failed to send.")
+        console.log("message not sent")
       }
     })
   }
@@ -91,7 +93,7 @@ class App extends Component {
         <ToastContainer /> 
         <div className="App bg-sage">
           <div className="main-div-smaller" >
-            <h1 className="h1">Emily Lofaro & Dylan Fox</h1>
+            <h1 className="h1 center">Emily Lofaro & Dylan Fox</h1>
             <div className="flex-wrap" >
               <div style={{"width":"50vh", "min-width":"30vh"}} >
 
@@ -158,7 +160,7 @@ class App extends Component {
                         <p className="p">
                             <label htmlFor="organization">Number of Guests</label>
                             <div className="App short-spacer" />
-                            <input type="number" id="organization" placeholder="2" className="form-control center-text" value={this.state.organization} onChange={evt => this.onOrganizationChange(evt)}/>
+                            <input type="number" id="guest" placeholder="2" className="form-control center-text" value={this.state.guest} onChange={evt => this.onGuestChange(evt)}/>
                         </p>
                         <p className="p">
                             <label htmlFor="email">Email address</label>

@@ -7,9 +7,7 @@ import doubletree from './../assets/DOUBLETREEsmol.png'
 import vuka from './../assets/VUKAsmol.png'
 
 // Variables
-const GOOGLE_MAP_API_KEY = process.env.KEY;
-console.log(GOOGLE_MAP_API_KEY)
-console.log(process.env.KEY)
+const GOOGLE_MAP_API_KEY = '';
 
 const center = { // CN Tower Landmark
     lat: 30.25628390453282,
