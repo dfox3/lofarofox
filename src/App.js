@@ -67,7 +67,7 @@ class App extends Component {
     console.log(this.state)
     var data = this.state
     console.log(data)
-    axios.post("https://dylanandemily2022.org:443/mailstaff", data, {})
+    axios.post("https://dylanandemily2022.com:443/mailstaff", data, {})
     .then((response)=>{
       console.log(response.data)
       if (response.data === 'Email sent') {
@@ -150,7 +150,7 @@ class App extends Component {
                   </Fade>
                   <Fade bottom cascade>
 
-                    <form id="contact-form" onSubmit={() => this.handleSubmit()} className="App black-box greyshadow-bottom pseudo-center" >
+                    <form id="contact-form" className="App black-box greyshadow-bottom pseudo-center" >
                       
                         <p className="p">
                             <label htmlFor="name">Name</label>
@@ -173,7 +173,7 @@ class App extends Component {
                             <textarea className="form-control" id="message" rows="15" value={this.state.message} style={{"height":"25vh","max-width":"550px", }} onChange={evt => this.onMessageChange(evt)}></textarea>
                         </p>
                         { (this.state.email !== '' && this.state.message !== '') ?
-                          (<button type="submit" className="App button-active">Submit</button>) :
+                          (<button type="submit" className="App button-active"  onSubmit={() => this.handleSubmit()} >Submit</button>) :
                           (<button type="submit" className="App button-off">Submit</button>) }
                     </form>
                   </Fade>
