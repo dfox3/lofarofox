@@ -20,6 +20,8 @@ const app = express(),
 app.use(cors())
 app.use(bodyParser.json());
 
+console.log(gm)
+
 // create reusable transporter object using the default SMTP transport
 const transporter = nodemailer.createTransport({
 port: 465,               // true for 465, false for other ports
