@@ -20,9 +20,7 @@ const mapStyles = {
 };
 
 function GoogleMaps(props) { 
-	console.log(props)
   	const GOOGLE_MAP_API_KEY= props.woof;
-  	console.log(GOOGLE_MAP_API_KEY)
 
 	
 
