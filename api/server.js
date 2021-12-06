@@ -66,10 +66,11 @@ app.post('/mailstaff',(req, res) => {
     from: gm["usr"],  // sender address
     to: ["lofarofox@gmail.com"],   // list of receivers
     bcc: ["lofarofox@gmail.com", req.body.email],
-    subject: "REQUEST from " + req.body.name, // + " - " + datetime,
-    html: "name:\t" + req.body.name + 
+    subject: "RSVP update from " + req.body.name, // + " - " + datetime,
+    html: "Thank you for responding to Emily and Dylan's wedding RSVP form. If you have any questions, feel free to reply to this email. <br/>Details:"
+          "<br/><br/>name:\t" + req.body.name + 
           "<br/><br/>email:\t" + req.body.email +
-          "<br/><br/>org:\t" + req.body.organization +
+          "<br/><br/>#guests:\t" + req.body.guest +
           "<br/><br/><br/><br/>" + req.body.message
 
   };

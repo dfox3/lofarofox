@@ -10,6 +10,7 @@ import axios from 'axios';
 import GoogleMap from './components/Map2' // import the map here
 import Fade from 'react-reveal/Fade';
 
+import flyingkiss from './assets/flyingkiss.png'
 import dummy from './assets/dummy.png'
 
 import john from './assets/john.png'
@@ -47,7 +48,6 @@ class App extends Component {
   componentDidMount() {
     axios.get("https://dylanandemily2022.com:443/gggggg")
       .then(res => {
-        console.log(res.data)
         this.setState({ woof: res.data });
       })
   }
@@ -116,6 +116,8 @@ class App extends Component {
       <div className="major-container bg-white">
         <ToastContainer /> 
         <div className="App bg-sage">
+          <img src={flyingkiss} style={{"width":"100%"}} alt="Image of Dylan catching Emily flying in the air for a kiss infront of the Austin, TX cityscape" />
+              
           <div className="main-div-smaller" >
             <h1 className="h1 center">Emily Lofaro & Dylan Fox</h1>
             <div className="flex-wrap" >
@@ -141,7 +143,7 @@ class App extends Component {
                 </Fade>
               </div>
               <div>
-                <img src={tintype} style={{"width":"100%"}} alt="Image of the downtown Austin Doubletree" />
+                <img src={tintype} style={{"width":"100%"}} alt="Tintype photograph of Dylan and Emily" />
               </div>
 
              
@@ -263,7 +265,7 @@ class App extends Component {
                 <br/>
                 </p>
                 <p className="p-alt slate-text">
-                To book a blocked room with the Doubletree Suites by Hilton Hotel Austin, <a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">click here</a>.
+                Link will be available soon to book a blocked room with the Doubletree Suites by Hilton Hotel Austin.
                 <br/>
                 <br/>
                 </p>  
