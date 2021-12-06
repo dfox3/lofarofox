@@ -67,7 +67,7 @@ app.post('/mailstaff',(req, res) => {
     to: ["lofarofox@gmail.com"],   // list of receivers
     bcc: ["lofarofox@gmail.com", req.body.email],
     subject: "RSVP update from " + req.body.name, // + " - " + datetime,
-    html: "Thank you for responding to Emily and Dylan's wedding RSVP form. If you have any questions, feel free to reply to this email. <br/>Details:"
+    html: "Thank you for responding to Emily and Dylan's wedding RSVP form. If you have any questions, feel free to reply to this email. <br/>Details:" +
           "<br/><br/>name:\t" + req.body.name + 
           "<br/><br/>email:\t" + req.body.email +
           "<br/><br/>#guests:\t" + req.body.guest +
