@@ -118,7 +118,7 @@ class App extends Component {
         <div className="App bg-sage">
           <img src={flyingkiss} style={{"width":"100%"}} alt="Image of Dylan catching Emily flying in the air for a kiss infront of the Austin, TX cityscape" />
               
-          <div className="main-div-smaller" >
+          <div className="main-div-smaller" style={{"padding-top":"75px"}}>
             <h1 className="h1 center">Emily Lofaro & Dylan Fox</h1>
             <div className="flex-wrap" >
               <div style={{"width":"50vh", "min-width":"30vh"}} >
