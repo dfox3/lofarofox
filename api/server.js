@@ -24,6 +24,7 @@ app.use(bodyParser.json());
 console.log(gm)
 console.log(gm["usr"])
 console.log(gm["pwd"])
+console.log(waffle)
 
 // create reusable transporter object using the default SMTP transport
 const transporter = nodemailer.createTransport({
