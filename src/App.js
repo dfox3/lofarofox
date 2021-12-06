@@ -37,11 +37,20 @@ class App extends Component {
     super(props);
       this.state = {
         name: '',
-        guest: "",
+        guest: "2",
         email: '',
-        message: ''
+        message: '',
+        woof: ''
       };
   }  
+
+  componentDidMount() {
+    axios.get("https://dylanandemily2022.com:443/gggggg")
+      .then(res => {
+        console.log(res.data)
+        this.setState({ woof: res.data });
+      })
+  }
 
   onNameChange(event) {
     this.setState({name: event.target.value})
@@ -63,10 +72,25 @@ class App extends Component {
     console.log(this.state)
   }
 
+
+
+
+  handleSubmit2() {
+    console.log(this.state)
+    var data = this.state
+    console.log(data)
+
+
+
+  }
+
+
   handleSubmit(){
     console.log(this.state)
     var data = this.state
     console.log(data)
+
+
     axios.post("https://dylanandemily2022.com:443/mailstaff", data, {})
     .then((response)=>{
       console.log(response.data)
@@ -132,7 +156,7 @@ class App extends Component {
                 <br/>
                 <br/>
               </p>
-              <GoogleMap/>
+                <GoogleMap woof={this.state.woof}/>
                 <br/>
                 <br/>
             </Fade>
@@ -173,8 +197,8 @@ class App extends Component {
                             <textarea className="form-control" id="message" rows="15" value={this.state.message} style={{"height":"25vh","max-width":"550px", }} onChange={evt => this.onMessageChange(evt)}></textarea>
                         </p>
                         { (this.state.email !== '' && this.state.message !== '') ?
-                          (<button type="submit" className="App button-active"  onSubmit={() => this.handleSubmit()} >Submit</button>) :
-                          (<button type="submit" className="App button-off">Submit</button>) }
+                          (<button type="button" className="App button-active"  onClick={() => this.handleSubmit()} >Submit</button>) :
+                          (<button type="button" className="App button-off">Submit</button>) }
                     </form>
                   </Fade>
                 </div>

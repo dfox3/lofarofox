@@ -1,4 +1,5 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, Component ,useState } from 'react';
+import axios from 'axios';
 
 
 import loro from './../assets/LOROsmol.png'
@@ -6,8 +7,7 @@ import hyatt from './../assets/HYATTsmol.png'
 import doubletree from './../assets/DOUBLETREEsmol.png'
 import vuka from './../assets/VUKAsmol.png'
 
-// Variables
-const GOOGLE_MAP_API_KEY = '';
+
 
 const center = { // CN Tower Landmark
     lat: 30.25628390453282,
@@ -19,7 +19,15 @@ const mapStyles = {
     height: '60vw',
 };
 
-function GoogleMaps(props) {
+function GoogleMaps(props) { 
+	console.log(props)
+  	const GOOGLE_MAP_API_KEY= props.woof;
+  	console.log(GOOGLE_MAP_API_KEY)
+
+	
+
+
+
     // refs
     const googleMapRef = React.createRef();
     const googleMap = useRef(null);

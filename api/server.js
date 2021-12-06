@@ -6,6 +6,7 @@ const fs = require('fs');
 var aws = require('aws-sdk');
 var s3Proxy = require('s3-proxy');
 var gm = require('./../../gm.json');
+var waffle = require('./../../waffle.json');
 var multer = require('multer')
 var multerS3 = require('multer-s3');
 var nodemailer = require('nodemailer');
@@ -62,8 +63,8 @@ app.post('/mailstaff',(req, res) => {
   //var datetime = "LastSync: " + new newDate.today() + " @ " + new newDate.timeNow();
   const mailData = {
     from: gm["usr"],  // sender address
-    to: ["lofarofox@shirebio.com"],   // list of receivers
-    bcc: ["lofarofox@shirebio.com", req.body.email],
+    to: ["lofarofox@gmail.com"],   // list of receivers
+    bcc: ["lofarofox@gmail.com", req.body.email],
     subject: "REQUEST from " + req.body.name, // + " - " + datetime,
     html: "name:\t" + req.body.name + 
           "<br/><br/>email:\t" + req.body.email +
@@ -84,6 +85,12 @@ app.post('/mailstaff',(req, res) => {
 
 app.get('/hello',function(req,res){
   res.send("Hello World!");
+});
+
+
+app.get('/gggggg',function(req,res){
+  console.log(waffle["KEY"])
+  res.send(waffle["KEY"]);
 });
 
 
