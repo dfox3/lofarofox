@@ -409,7 +409,7 @@ class App extends Component {
                 <h2 className="h2 center-text remove-margin">Aurora Fox</h2>
                 <p className="p center-text remove-margin">Junior Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
-                  Niece and former playmate to the Bride and Groom. 
+                  Niece and former (and current) playmate to the Bride and Groom. 
                 </p>
                 <br/>
                 <br/>
