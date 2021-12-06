@@ -14,10 +14,15 @@ import flyingkiss from './assets/flyingkiss.png'
 import dummy from './assets/dummy.png'
 
 import john from './assets/john.png'
+import melanie from './assets/melanie.png'
 import patrick from './assets/patrick.png'
+import catherine from './assets/catherine.png'
 import kyle from './assets/kyle.png'
+import amanda from './assets/amanda.png'
 import kevin from './assets/kevin3.png'
+import kaitlyn from './assets/kaitlyn.png'
 import oliver from './assets/oliver.png'
+import sarah from './assets/sarah.png'
 import aiden from './assets/aiden.png'
 import rory from './assets/rory.png'
 import tintype from './assets/tintype.png'
@@ -296,11 +301,11 @@ class App extends Component {
                 <br/>
               </div>
               <div style={{"width":"100%", "max-width":"400px"}} >
-                <img src={dummy} style={{"width":"100%", "max-width":"400px"}} alt="John Fox - best man" />
+                <img src={melanie} style={{"width":"100%", "max-width":"400px"}} alt="Melanie Lofaro Osti - Maid of Honor" />
                 <h2 className="h2 center-text remove-margin">Melanie Lofaro Osti</h2>
                 <p className="p center-text remove-margin">Maid of Honor</p>
                 <p className="p2-alt center-text remove-margin">
-                  Description
+                  Cousin of the Bride.
                 </p>
                 <br/>
                 <br/>
@@ -317,12 +322,11 @@ class App extends Component {
                 <br/>
               </div>
               <div style={{"width":"100%", "max-width":"400px"}} >
-                <img src={dummy} style={{"width":"100%", "max-width":"400px"}} alt="John Fox - best man" />
+                <img src={catherine} style={{"width":"100%", "max-width":"400px"}} alt="Catherine Lofaro Rangel - Bridesmaid" />
                 <h2 className="h2 center-text remove-margin">Catherine Lofaro Rangel</h2>
                 <p className="p center-text remove-margin">Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
-                  Family man, world traveler, and brother of the Groom.
-                  Patrick has been a role-model to both Dylan and Emily.
+                  Cousin of the Bride.
                 </p>
                 <br/>
                 <br/>
@@ -339,12 +343,11 @@ class App extends Component {
                 <br/>
               </div>
               <div style={{"width":"100%", "max-width":"400px"}} >
-                <img src={dummy} style={{"width":"100%", "max-width":"400px"}} alt="John Fox - best man" />
+                <img src={amanda} style={{"width":"100%", "max-width":"400px"}} alt="Amanda Lofaro - Bridesmaid" />
                 <h2 className="h2 center-text remove-margin">Amanda Lofaro</h2>
                 <p className="p center-text remove-margin">Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
-                  Family man, world traveler, and brother of the Groom.
-                  Patrick has been a role-model to both Dylan and Emily.
+                  Cousin of the Bride.
                 </p>
                 <br/>
                 <br/>
@@ -362,12 +365,11 @@ class App extends Component {
                 <br/>
               </div>
               <div style={{"width":"100%", "max-width":"400px"}} >
-                <img src={dummy} style={{"width":"100%", "max-width":"400px"}} alt="John Fox - best man" />
+                <img src={kaitlyn} style={{"width":"100%", "max-width":"400px"}} alt="Kaitlyn - Bridesmaid" />
                 <h2 className="h2 center-text remove-margin">Kaitlyn Coffey</h2>
                 <p className="p center-text remove-margin">Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
-                  Family man, world traveler, and brother of the Groom.
-                  Patrick has been a role-model to both Dylan and Emily.
+                  Friend of the Bride.
                 </p>
                 <br/>
                 <br/>
@@ -384,12 +386,11 @@ class App extends Component {
                 <br/>
               </div>
               <div style={{"width":"100%", "max-width":"400px"}} >
-                <img src={dummy} style={{"width":"100%", "max-width":"400px"}} alt="John Fox - best man" />
+                <img src={sarah} style={{"width":"100%", "max-width":"400px"}} alt="Sarah Furman - Bridesmaid" />
                 <h2 className="h2 center-text remove-margin">Sarah Furman</h2>
                 <p className="p center-text remove-margin">Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
-                  Family man, world traveler, and brother of the Groom.
-                  Patrick has been a role-model to both Dylan and Emily.
+                  Second cousin of the Bride.
                 </p>
                 <br/>
                 <br/>
