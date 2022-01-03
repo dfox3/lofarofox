@@ -10,7 +10,7 @@ import axios from 'axios';
 import GoogleMap from './components/Map2' // import the map here
 import Fade from 'react-reveal/Fade';
 
-import flyingkiss from './assets/flyingkiss.png'
+import flyingkiss from './assets/flyingkiss_medium.png'
 import dummy from './assets/dummy.png'
 
 import john from './assets/john.png'
@@ -238,7 +238,7 @@ class App extends Component {
                 <br/>
                 </p>
                 <p className="p-alt slate-text">
-                To book a blocked room with the Hyatt Regency, <a href="https://www.hyatt.com/en-US/group-booking/AUSRA/G-DDFW" target="_blank" rel="noopener noreferrer">click here</a>.
+                To book a blocked room with the Hyatt Regency, <a href="https://www.hyatt.com/en-US/group-booking/AUSRA/G-DDFW" target="_blank" rel="noopener noreferrer">click here</a>. Block is available until March 3, 2022.
                 <br/>
                 <br/>
                 </p>  
@@ -270,7 +270,7 @@ class App extends Component {
                 <br/>
                 </p>
                 <p className="p-alt slate-text">
-                Link will be available soon to book a blocked room with the Doubletree Suites by Hilton Hotel Austin.
+                To book with Doubletree Suites by Hilton Hotel Austin, call 512-478-7000 and ask for the Lofaro/Fox Wedding group rate. Block is available until March 12, 2022.
                 <br/>
                 <br/>
                 </p>  
