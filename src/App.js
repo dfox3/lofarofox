@@ -305,7 +305,7 @@ class App extends Component {
                 <h2 className="h2 center-text remove-margin">Melanie Lofaro Osti</h2>
                 <p className="p center-text remove-margin">Maid of Honor</p>
                 <p className="p2-alt center-text remove-margin">
-                  Cousin of the Bride.
+                  Partner in crime to the bride. When Melanie and Emily together, you can bet they’re up to no good.
                 </p>
                 <br/>
                 <br/>
@@ -326,7 +326,7 @@ class App extends Component {
                 <h2 className="h2 center-text remove-margin">Catherine Lofaro Rangel</h2>
                 <p className="p center-text remove-margin">Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
-                  Cousin of the Bride.
+                  Cousin of the Bride. When she’s not working for University of Houston, she’s the best actress in the NASA/Webster area.
                 </p>
                 <br/>
                 <br/>
@@ -347,7 +347,7 @@ class App extends Component {
                 <h2 className="h2 center-text remove-margin">Amanda Lofaro</h2>
                 <p className="p center-text remove-margin">Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
-                  Cousin of the Bride.
+                  Cousin of the Bride. She’s beauty, she’s grace, she’s the best 911 operator in the state.
                 </p>
                 <br/>
                 <br/>
@@ -369,8 +369,7 @@ class App extends Component {
                 <h2 className="h2 center-text remove-margin">Kaitlyn Coffey</h2>
                 <p className="p center-text remove-margin">Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
-                  Friend of the Bride.
-                </p>
+                  Long time friend of the Bride. She’s a multitalented artist–social worker–style extraordinaire with a big heart.                </p>
                 <br/>
                 <br/>
               </div>
@@ -390,7 +389,7 @@ class App extends Component {
                 <h2 className="h2 center-text remove-margin">Sarah Furman</h2>
                 <p className="p center-text remove-margin">Bridesmaid</p>
                 <p className="p2-alt center-text remove-margin">
-                  Second cousin of the Bride.
+                  Drill team dancer, horseback rider, and all around talented second cousin of the bride.
                 </p>
                 <br/>
                 <br/>
