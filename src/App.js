@@ -133,14 +133,13 @@ class App extends Component {
                 <br/>
                 <br/>
                 <p className="p">
-
                 
                 Together with their families, Dylan and Emily joyfully invite you to their wedding.
                 
                 <br/>
                 <br/>
                 
-                The wedding is on Saturday, the second of April, two thousand twenty-two at four o'clock in the afternoon.
+                The wedding ceremony begins on Saturday, April 2, at 4:00 PM.
                 
                 <br/>
                 <br/>
@@ -238,7 +237,7 @@ class App extends Component {
                 <br/>
                 </p>
                 <p className="p-alt slate-text">
-                To book a blocked room with the Hyatt Regency, <a href="https://www.hyatt.com/en-US/group-booking/AUSRA/G-DDFW" target="_blank" rel="noopener noreferrer">click here</a>. Block is available until March 3, 2022.
+                Block is closed!
                 <br/>
                 <br/>
                 </p>  
@@ -270,7 +269,7 @@ class App extends Component {
                 <br/>
                 </p>
                 <p className="p-alt slate-text">
-                To book with Doubletree Suites by Hilton Hotel Austin, call 512-478-7000 and ask for the Lofaro/Fox Wedding group rate. Block is available until March 12, 2022.
+                Block is closed!
                 <br/>
                 <br/>
                 </p>  
